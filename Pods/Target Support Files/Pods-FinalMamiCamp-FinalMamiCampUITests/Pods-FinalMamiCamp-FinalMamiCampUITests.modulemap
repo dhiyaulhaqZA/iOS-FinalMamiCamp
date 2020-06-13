@@ -1,0 +1,6 @@
+framework module Pods_FinalMamiCamp_FinalMamiCampUITests {
+  umbrella header "Pods-FinalMamiCamp-FinalMamiCampUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
