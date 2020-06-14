@@ -93,6 +93,13 @@
 		7B6F9F862495E51400495D8B /* DetailAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F9F852495E51400495D8B /* DetailAuthor.swift */; };
 		7B70F73E2496201000FDA3FF /* BookViewController+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B70F73D2496201000FDA3FF /* BookViewController+UICollectionView.swift */; };
 		7B70F74124962BA600FDA3FF /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B70F74024962BA600FDA3FF /* Constant.swift */; };
+		7B70F74F24962F8700FDA3FF /* TabBarPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B70F74824962F8700FDA3FF /* TabBarPresenterProtocol.swift */; };
+		7B70F75024962F8700FDA3FF /* TabBarViewPresenterToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B70F74924962F8700FDA3FF /* TabBarViewPresenterToView.swift */; };
+		7B70F75124962F8700FDA3FF /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B70F74A24962F8700FDA3FF /* TabBarRouter.swift */; };
+		7B70F75224962F8700FDA3FF /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B70F74B24962F8700FDA3FF /* TabBarPresenter.swift */; };
+		7B70F75324962F8700FDA3FF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B70F74C24962F8700FDA3FF /* TabBarViewController.swift */; };
+		7B70F75424962F8700FDA3FF /* TabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B70F74D24962F8700FDA3FF /* TabBarInteractor.swift */; };
+		7B70F75524962F8700FDA3FF /* TabBarEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B70F74E24962F8700FDA3FF /* TabBarEntity.swift */; };
 		7BB7D44F249507FB00E120F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB7D44E249507FB00E120F8 /* AppDelegate.swift */; };
 		7BB7D451249507FB00E120F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB7D450249507FB00E120F8 /* SceneDelegate.swift */; };
 		7BB7D458249507FD00E120F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB7D457249507FD00E120F8 /* Assets.xcassets */; };
@@ -211,6 +218,13 @@
 		7B6F9F852495E51400495D8B /* DetailAuthor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAuthor.swift; sourceTree = "<group>"; };
 		7B70F73D2496201000FDA3FF /* BookViewController+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookViewController+UICollectionView.swift"; sourceTree = "<group>"; };
 		7B70F74024962BA600FDA3FF /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		7B70F74824962F8700FDA3FF /* TabBarPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPresenterProtocol.swift; sourceTree = "<group>"; };
+		7B70F74924962F8700FDA3FF /* TabBarViewPresenterToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewPresenterToView.swift; sourceTree = "<group>"; };
+		7B70F74A24962F8700FDA3FF /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
+		7B70F74B24962F8700FDA3FF /* TabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
+		7B70F74C24962F8700FDA3FF /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		7B70F74D24962F8700FDA3FF /* TabBarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarInteractor.swift; sourceTree = "<group>"; };
+		7B70F74E24962F8700FDA3FF /* TabBarEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarEntity.swift; sourceTree = "<group>"; };
 		7BB7D44B249507FB00E120F8 /* FinalMamiCamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalMamiCamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB7D44E249507FB00E120F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BB7D450249507FB00E120F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -464,6 +478,7 @@
 		7B52670F249509CD009B5A39 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				7B70F74224962F5100FDA3FF /* TabBar */,
 				7B4E30F824961E71002F72AA /* Book */,
 				7B526710249509D9009B5A39 /* Genre */,
 			);
@@ -558,6 +573,60 @@
 				7B70F74024962BA600FDA3FF /* Constant.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		7B70F74224962F5100FDA3FF /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7B70F74724962F7800FDA3FF /* View */,
+				7B70F74624962F6F00FDA3FF /* Interactor */,
+				7B70F74524962F6900FDA3FF /* Presenter */,
+				7B70F74424962F6200FDA3FF /* Entity */,
+				7B70F74324962F5B00FDA3FF /* Router */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		7B70F74324962F5B00FDA3FF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7B70F74A24962F8700FDA3FF /* TabBarRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		7B70F74424962F6200FDA3FF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				7B70F74E24962F8700FDA3FF /* TabBarEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		7B70F74524962F6900FDA3FF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7B70F74B24962F8700FDA3FF /* TabBarPresenter.swift */,
+				7B70F74824962F8700FDA3FF /* TabBarPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7B70F74624962F6F00FDA3FF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7B70F74D24962F8700FDA3FF /* TabBarInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7B70F74724962F7800FDA3FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B70F74C24962F8700FDA3FF /* TabBarViewController.swift */,
+				7B70F74924962F8700FDA3FF /* TabBarViewPresenterToView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		7BB7D442249507FB00E120F8 = {
@@ -876,6 +945,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B5266E424950997009B5A39 /* DZAAlert.swift in Sources */,
+				7B70F75224962F8700FDA3FF /* TabBarPresenter.swift in Sources */,
 				7B5266E724950997009B5A39 /* Pholidota.swift in Sources */,
 				7B5266E024950997009B5A39 /* UIViewController+Extension.swift in Sources */,
 				7B6F9F772495DB9A00495D8B /* NetErrorHandler.swift in Sources */,
@@ -887,6 +957,7 @@
 				7B5266DA24950997009B5A39 /* UIImageView+Extension.swift in Sources */,
 				7B5266E924950997009B5A39 /* SnackyView.swift in Sources */,
 				7B52670324950997009B5A39 /* InputValidator.swift in Sources */,
+				7B70F75024962F8700FDA3FF /* TabBarViewPresenterToView.swift in Sources */,
 				7B5266F424950997009B5A39 /* BottomSheetContainerView.swift in Sources */,
 				7B5266E224950997009B5A39 /* DZACollectionViewFlowLayout.swift in Sources */,
 				7B52670424950997009B5A39 /* Global.swift in Sources */,
@@ -928,7 +999,9 @@
 				7B526719249509EA009B5A39 /* GenreViewPresenterToView.swift in Sources */,
 				7B6F9F822495E4E400495D8B /* NewBook.swift in Sources */,
 				7B70F73E2496201000FDA3FF /* BookViewController+UICollectionView.swift in Sources */,
+				7B70F75124962F8700FDA3FF /* TabBarRouter.swift in Sources */,
 				7B52670724950997009B5A39 /* DZAThirdPartyApp.swift in Sources */,
+				7B70F74F24962F8700FDA3FF /* TabBarPresenterProtocol.swift in Sources */,
 				7B5266E824950997009B5A39 /* Snacky.swift in Sources */,
 				7B52670224950997009B5A39 /* DZAEmptyView.swift in Sources */,
 				7B4E310624961E86002F72AA /* BookEntity.swift in Sources */,
@@ -955,10 +1028,13 @@
 				7B52670624950997009B5A39 /* CountDownTimer.swift in Sources */,
 				7B5266FD24950997009B5A39 /* OtpTextField.swift in Sources */,
 				7B6F9F782495DB9A00495D8B /* NetworkCall.swift in Sources */,
+				7B70F75324962F8700FDA3FF /* TabBarViewController.swift in Sources */,
 				7B5266DC24950997009B5A39 /* UITub.swift in Sources */,
+				7B70F75424962F8700FDA3FF /* TabBarInteractor.swift in Sources */,
 				7B4E310124961E86002F72AA /* BookViewPresenterToView.swift in Sources */,
 				7B4E310524961E86002F72AA /* BookInteractor.swift in Sources */,
 				7B5266F824950997009B5A39 /* DZATextField.swift in Sources */,
+				7B70F75524962F8700FDA3FF /* TabBarEntity.swift in Sources */,
 				7B5266EB24950997009B5A39 /* ContainerModalViewController.swift in Sources */,
 				7B5266F924950997009B5A39 /* RatingView.swift in Sources */,
 				7B5266E524950997009B5A39 /* UITextField+Extension.swift in Sources */,
