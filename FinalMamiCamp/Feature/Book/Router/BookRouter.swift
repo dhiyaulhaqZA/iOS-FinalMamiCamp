@@ -25,4 +25,9 @@ class BookRouter: BookPresenterToRouterProtocol {
         interactor.presenter = presenter
         return view
     }
+    
+    func openDetailBookScreen(navigationController: UINavigationController?, param: DetailBookParam) {
+        let targetVC = DetailBookRouter.createModule(param: param)
+        navigationController?.pushViewController(targetVC, animated: true)
+    }
 }

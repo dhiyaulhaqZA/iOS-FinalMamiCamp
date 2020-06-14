@@ -10,6 +10,13 @@ import UIKit
 
 extension BookViewController: UICollectionViewDelegateFlowLayout {
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let id = bookList[indexPath.row].id {
+            presenter?.openDetailBookScreen(navigationController: navigationController, param: DetailBookParam(id: id))
+        }
+        
+        
+    }
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }

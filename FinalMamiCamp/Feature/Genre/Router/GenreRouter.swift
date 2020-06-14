@@ -25,4 +25,9 @@ class GenreRouter: GenrePresenterToRouterProtocol {
         interactor.presenter = presenter
         return view
     }
+    
+    func openBookScreen(navigationController: UINavigationController?, param: BookParam) {
+        let targetVC = BookRouter.createModule(param: param)
+        navigationController?.pushViewController(targetVC, animated: true)
+    }
 }

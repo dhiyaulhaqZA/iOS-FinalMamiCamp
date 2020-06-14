@@ -11,7 +11,7 @@ import UIKit
 class DetailBookRouter: DetailBookPresenterToRouterProtocol {
     
     static func createModule(param: DetailBookParam) -> DetailBookViewController {
-        let layout = UICollectionViewFlowLayout()
+        let layout = DZACollectionViewFlowLayout()
         let view = DetailBookViewController(collectionViewLayout: layout)
         let presenter: DetailBookViewToPresenterProtocol & DetailBookInteractorToPresenterProtocol = DetailBookPresenter()
         let interactor: DetailBookPresenterToInteractorProtocol = DetailBookInteractor()

@@ -19,7 +19,7 @@ enum TabBarMenu {
     var viewController: UIViewController {
         switch self {
         case .newBook:
-            return BookRouter.createModule(param: BookParam())
+            return BookRouter.createModule(param: BookParam(id: nil))
         case .genres:
             return GenreRouter.createModule(param: GenreParam())
         

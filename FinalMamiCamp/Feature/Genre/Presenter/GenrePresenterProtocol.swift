@@ -14,6 +14,7 @@ protocol GenreViewToPresenterProtocol: class {
     var router: GenrePresenterToRouterProtocol? {get set}
     
     func getGenres()
+    func openBookScreen(navigationController: UINavigationController?, param: BookParam)
 }
 
 protocol GenrePresenterToViewProtocol: class {
@@ -24,6 +25,8 @@ protocol GenrePresenterToViewProtocol: class {
 
 protocol GenrePresenterToRouterProtocol: class {
     static func createModule(param: GenreParam) -> GenreViewController
+    
+    func openBookScreen(navigationController: UINavigationController?, param: BookParam)
 }
 
 protocol GenrePresenterToInteractorProtocol: class {

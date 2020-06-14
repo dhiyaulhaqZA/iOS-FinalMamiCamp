@@ -12,9 +12,14 @@ protocol DetailBookViewToPresenterProtocol: class {
     var view: DetailBookPresenterToViewProtocol? {get set}
     var interactor: DetailBookPresenterToInteractorProtocol? {get set}
     var router: DetailBookPresenterToRouterProtocol? {get set}
+    
+    func getGetDetail(param: DetailBookParam)
 }
 
 protocol DetailBookPresenterToViewProtocol: class {
+    func onGetDetailBookSuccess(body: ServerResponse<DetailBookResponse>, responseCode: Int)
+    func onGetDetailBookFailure(errMsg: String, responseCode: Int, errorCode: Int)
+    func onGetDetailBookLoading(isLoading: Bool)
 }
 
 protocol DetailBookPresenterToRouterProtocol: class {
@@ -23,7 +28,12 @@ protocol DetailBookPresenterToRouterProtocol: class {
 
 protocol DetailBookPresenterToInteractorProtocol: class {
     var presenter: DetailBookInteractorToPresenterProtocol? {get set}
+    
+    func getGetDetail(param: DetailBookParam)
 }
 
 protocol DetailBookInteractorToPresenterProtocol: class {
+    func onGetDetailBookSuccess(body: ServerResponse<DetailBookResponse>, responseCode: Int)
+    func onGetDetailBookFailure(errMsg: String, responseCode: Int, errorCode: Int)
+    func onGetDetailBookLoading(isLoading: Bool)
 }

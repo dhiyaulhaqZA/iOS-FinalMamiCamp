@@ -9,5 +9,18 @@
 import UIKit
 
 extension DetailBookViewController: DetailBookPresenterToViewProtocol {
+    func onGetDetailBookSuccess(body: ServerResponse<DetailBookResponse>, responseCode: Int) {
+        detailBookData = body.result
+        collectionView.reloadData()
+    }
+    
+    func onGetDetailBookFailure(errMsg: String, responseCode: Int, errorCode: Int) {
+        Snacky.show(title: errMsg)
+    }
+    
+    func onGetDetailBookLoading(isLoading: Bool) {
+        
+    }
+    
 
 }

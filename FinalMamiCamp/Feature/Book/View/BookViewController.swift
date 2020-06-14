@@ -23,7 +23,13 @@ class BookViewController: UICollectionViewController {
         collectionView.contentInset = UIEdgeInsets(top: 16, left: 8, bottom: 16, right: 8)
         collectionView.register(BookCell.self, forCellWithReuseIdentifier: bookCellIdentifier)
         
-        presenter?.getNewBooks(param: GetNewBookBody(limit: 18))
+        if let id = param?.id {
+            presenter?.getBookByGenre(param: GetBookBody(id: id, limit: 18))
+        } else {
+            presenter?.getNewBooks(param: GetNewBookBody(limit: 18))
+
+        }
+        
     }
     
 }

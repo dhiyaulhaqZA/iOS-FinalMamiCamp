@@ -10,6 +10,7 @@ import Foundation
 
 struct GetBookBody: Codable {
     let id: Int
+    let limit: Int
 }
 
 // MARK: - Result

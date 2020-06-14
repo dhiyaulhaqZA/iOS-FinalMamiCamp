@@ -9,5 +9,5 @@
 import Foundation
 
 struct DetailBookParam {
-    
+    let id: Int
 }

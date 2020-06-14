@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class GenrePresenter: GenreViewToPresenterProtocol {
     var view: GenrePresenterToViewProtocol?
@@ -16,6 +17,11 @@ class GenrePresenter: GenreViewToPresenterProtocol {
     func getGenres() {
         interactor?.getGenres()
     }
+    
+    func openBookScreen(navigationController: UINavigationController?, param: BookParam) {
+        router?.openBookScreen(navigationController: navigationController, param: param)
+    }
+    
 }
 
 extension GenrePresenter: GenreInteractorToPresenterProtocol {

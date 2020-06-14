@@ -9,7 +9,11 @@
 import UIKit
 
 extension GenreViewController: UICollectionViewDelegateFlowLayout {
-    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let id = genreList[indexPath.row].id {
+            presenter?.openBookScreen(navigationController: navigationController, param: BookParam(id: id))
+        }
+    }
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
