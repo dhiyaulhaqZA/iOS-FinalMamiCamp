@@ -106,6 +106,13 @@
 		7BB7D45B249507FD00E120F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB7D459249507FD00E120F8 /* LaunchScreen.storyboard */; };
 		7BB7D466249507FD00E120F8 /* FinalMamiCampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB7D465249507FD00E120F8 /* FinalMamiCampTests.swift */; };
 		7BB7D471249507FD00E120F8 /* FinalMamiCampUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB7D470249507FD00E120F8 /* FinalMamiCampUITests.swift */; };
+		7BEA33C32496381200DE9D3A /* DetailBookPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA33BC2496381200DE9D3A /* DetailBookPresenterProtocol.swift */; };
+		7BEA33C42496381200DE9D3A /* DetailBookViewPresenterToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA33BD2496381200DE9D3A /* DetailBookViewPresenterToView.swift */; };
+		7BEA33C52496381200DE9D3A /* DetailBookRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA33BE2496381200DE9D3A /* DetailBookRouter.swift */; };
+		7BEA33C62496381200DE9D3A /* DetailBookPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA33BF2496381200DE9D3A /* DetailBookPresenter.swift */; };
+		7BEA33C72496381200DE9D3A /* DetailBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA33C02496381200DE9D3A /* DetailBookViewController.swift */; };
+		7BEA33C82496381200DE9D3A /* DetailBookInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA33C12496381200DE9D3A /* DetailBookInteractor.swift */; };
+		7BEA33C92496381200DE9D3A /* DetailBookEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA33C22496381200DE9D3A /* DetailBookEntity.swift */; };
 		CE97C98A2CB765068E09AF67 /* Pods_FinalMamiCamp_FinalMamiCampUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01061053BEDAB7CC1ACFE01 /* Pods_FinalMamiCamp_FinalMamiCampUITests.framework */; };
 		E48ABD917D838D7E62D8E638 /* Pods_FinalMamiCamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6602815E476F29B66C16A2 /* Pods_FinalMamiCamp.framework */; };
 /* End PBXBuildFile section */
@@ -237,6 +244,13 @@
 		7BB7D46C249507FD00E120F8 /* FinalMamiCampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinalMamiCampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB7D470249507FD00E120F8 /* FinalMamiCampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalMamiCampUITests.swift; sourceTree = "<group>"; };
 		7BB7D472249507FD00E120F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BEA33BC2496381200DE9D3A /* DetailBookPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookPresenterProtocol.swift; sourceTree = "<group>"; };
+		7BEA33BD2496381200DE9D3A /* DetailBookViewPresenterToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookViewPresenterToView.swift; sourceTree = "<group>"; };
+		7BEA33BE2496381200DE9D3A /* DetailBookRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookRouter.swift; sourceTree = "<group>"; };
+		7BEA33BF2496381200DE9D3A /* DetailBookPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookPresenter.swift; sourceTree = "<group>"; };
+		7BEA33C02496381200DE9D3A /* DetailBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookViewController.swift; sourceTree = "<group>"; };
+		7BEA33C12496381200DE9D3A /* DetailBookInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookInteractor.swift; sourceTree = "<group>"; };
+		7BEA33C22496381200DE9D3A /* DetailBookEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookEntity.swift; sourceTree = "<group>"; };
 		C01061053BEDAB7CC1ACFE01 /* Pods_FinalMamiCamp_FinalMamiCampUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalMamiCamp_FinalMamiCampUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D524A683D08C917294C15DC7 /* Pods-FinalMamiCampTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalMamiCampTests.release.xcconfig"; path = "Target Support Files/Pods-FinalMamiCampTests/Pods-FinalMamiCampTests.release.xcconfig"; sourceTree = "<group>"; };
 		E8B3D8BF658E2428BEC77689 /* Pods-FinalMamiCamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalMamiCamp.debug.xcconfig"; path = "Target Support Files/Pods-FinalMamiCamp/Pods-FinalMamiCamp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -478,6 +492,7 @@
 		7B52670F249509CD009B5A39 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				7BEA33B5249637D000DE9D3A /* DetailBook */,
 				7B70F74224962F5100FDA3FF /* TabBar */,
 				7B4E30F824961E71002F72AA /* Book */,
 				7B526710249509D9009B5A39 /* Genre */,
@@ -684,6 +699,60 @@
 				7BB7D472249507FD00E120F8 /* Info.plist */,
 			);
 			path = FinalMamiCampUITests;
+			sourceTree = "<group>";
+		};
+		7BEA33B5249637D000DE9D3A /* DetailBook */ = {
+			isa = PBXGroup;
+			children = (
+				7BEA33BB2496380200DE9D3A /* View */,
+				7BEA33BA249637FB00DE9D3A /* Interactor */,
+				7BEA33B9249637F600DE9D3A /* Presenter */,
+				7BEA33B7249637E600DE9D3A /* Entity */,
+				7BEA33B6249637DC00DE9D3A /* Router */,
+			);
+			path = DetailBook;
+			sourceTree = "<group>";
+		};
+		7BEA33B6249637DC00DE9D3A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7BEA33BE2496381200DE9D3A /* DetailBookRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		7BEA33B7249637E600DE9D3A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				7BEA33C22496381200DE9D3A /* DetailBookEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		7BEA33B9249637F600DE9D3A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7BEA33BF2496381200DE9D3A /* DetailBookPresenter.swift */,
+				7BEA33BC2496381200DE9D3A /* DetailBookPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7BEA33BA249637FB00DE9D3A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7BEA33C12496381200DE9D3A /* DetailBookInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7BEA33BB2496380200DE9D3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BEA33C02496381200DE9D3A /* DetailBookViewController.swift */,
+				7BEA33BD2496381200DE9D3A /* DetailBookViewPresenterToView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -951,6 +1020,8 @@
 				7B6F9F772495DB9A00495D8B /* NetErrorHandler.swift in Sources */,
 				7B6F9F792495DB9A00495D8B /* CacabaApiService.swift in Sources */,
 				7B52671B249509EA009B5A39 /* GenrePresenter.swift in Sources */,
+				7BEA33C52496381200DE9D3A /* DetailBookRouter.swift in Sources */,
+				7BEA33C62496381200DE9D3A /* DetailBookPresenter.swift in Sources */,
 				7B4E30E52495E97F002F72AA /* GetGenre.swift in Sources */,
 				7B526718249509EA009B5A39 /* GenrePresenterProtocol.swift in Sources */,
 				7B52671C249509EA009B5A39 /* GenreViewController.swift in Sources */,
@@ -959,12 +1030,14 @@
 				7B52670324950997009B5A39 /* InputValidator.swift in Sources */,
 				7B70F75024962F8700FDA3FF /* TabBarViewPresenterToView.swift in Sources */,
 				7B5266F424950997009B5A39 /* BottomSheetContainerView.swift in Sources */,
+				7BEA33C92496381200DE9D3A /* DetailBookEntity.swift in Sources */,
 				7B5266E224950997009B5A39 /* DZACollectionViewFlowLayout.swift in Sources */,
 				7B52670424950997009B5A39 /* Global.swift in Sources */,
 				7B6F9F862495E51400495D8B /* DetailAuthor.swift in Sources */,
 				7B5266F124950997009B5A39 /* DZAKeychain.swift in Sources */,
 				7B5266DD24950997009B5A39 /* UIColor+Custom.swift in Sources */,
 				7B5266FB24950997009B5A39 /* DZALabelHint.swift in Sources */,
+				7BEA33C42496381200DE9D3A /* DetailBookViewPresenterToView.swift in Sources */,
 				7B5266ED24950997009B5A39 /* HalfModalTransitionAnimator.swift in Sources */,
 				7B43F5642495CEBD0049ABDE /* GenreViewController+UICollectionView.swift in Sources */,
 				7B5266EC24950997009B5A39 /* HalfModalInteractiveTransition.swift in Sources */,
@@ -997,6 +1070,7 @@
 				7B5266F724950997009B5A39 /* IconLabel.swift in Sources */,
 				7B5266992495094B009B5A39 /* R.generated.swift in Sources */,
 				7B526719249509EA009B5A39 /* GenreViewPresenterToView.swift in Sources */,
+				7BEA33C72496381200DE9D3A /* DetailBookViewController.swift in Sources */,
 				7B6F9F822495E4E400495D8B /* NewBook.swift in Sources */,
 				7B70F73E2496201000FDA3FF /* BookViewController+UICollectionView.swift in Sources */,
 				7B70F75124962F8700FDA3FF /* TabBarRouter.swift in Sources */,
@@ -1009,6 +1083,8 @@
 				7B5266F524950997009B5A39 /* DZAButton.swift in Sources */,
 				7B5266EF24950997009B5A39 /* KeychainSwift.swift in Sources */,
 				7B4E310D24961F6B002F72AA /* BookCell.swift in Sources */,
+				7BEA33C32496381200DE9D3A /* DetailBookPresenterProtocol.swift in Sources */,
+				7BEA33C82496381200DE9D3A /* DetailBookInteractor.swift in Sources */,
 				7B5266FC24950997009B5A39 /* DZATextView.swift in Sources */,
 				7B5266EE24950997009B5A39 /* HalfModalTransitioningDelegate.swift in Sources */,
 				7B52670B24950997009B5A39 /* Double+Extension.swift in Sources */,
