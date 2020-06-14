@@ -11,8 +11,7 @@ import UIKit
 class TabBarRouter: TabBarPresenterToRouterProtocol {
     
     static func createModule(param: TabBarParam) -> TabBarViewController {
-        let layout = UICollectionViewFlowLayout()
-        let view = TabBarViewController(collectionViewLayout: layout)
+        let view = TabBarViewController()
         let presenter: TabBarViewToPresenterProtocol & TabBarInteractorToPresenterProtocol = TabBarPresenter()
         let interactor: TabBarPresenterToInteractorProtocol = TabBarInteractor()
         let router: TabBarPresenterToRouterProtocol = TabBarRouter()
