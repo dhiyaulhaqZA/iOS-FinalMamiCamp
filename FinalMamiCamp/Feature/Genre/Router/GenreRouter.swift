@@ -1,5 +1,5 @@
 //
-//  HomeRouter.swift
+//  GenreRouter.swift
 //  FinalMamiCamp
 //
 //  Created by Dhiya Ulhaq Zulha Alamsyah on 13/06/20.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-class HomeRouter: HomePresenterToRouterProtocol {
+class GenreRouter: GenrePresenterToRouterProtocol {
     
-    static func createModule(param: HomeParam) -> HomeViewController {
+    static func createModule(param: GenreParam) -> GenreViewController {
         let layout = UICollectionViewFlowLayout()
-        let view = HomeViewController(collectionViewLayout: layout)
-        let presenter: HomeViewToPresenterProtocol & HomeInteractorToPresenterProtocol = HomePresenter()
-        let interactor: HomePresenterToInteractorProtocol = HomeInteractor()
-        let router: HomePresenterToRouterProtocol = HomeRouter()
+        let view = GenreViewController(collectionViewLayout: layout)
+        let presenter: GenreViewToPresenterProtocol & GenreInteractorToPresenterProtocol = GenrePresenter()
+        let interactor: GenrePresenterToInteractorProtocol = GenreInteractor()
+        let router: GenrePresenterToRouterProtocol = GenreRouter()
         view.param = param
         view.title = ""
         view.presenter = presenter
