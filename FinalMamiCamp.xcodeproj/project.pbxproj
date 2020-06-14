@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		762DC302F9018BFE8767BD04 /* Pods_FinalMamiCampTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33BCDF26F686E3AD0F63AA08 /* Pods_FinalMamiCampTests.framework */; };
+		7B43F5642495CEBD0049ABDE /* HomeViewController+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B43F5632495CEBD0049ABDE /* HomeViewController+UICollectionView.swift */; };
+		7B4E30E52495E97F002F72AA /* GetGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E30E42495E97F002F72AA /* GetGenre.swift */; };
 		7B5266992495094B009B5A39 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5266982495094B009B5A39 /* R.generated.swift */; };
 		7B5266D924950997009B5A39 /* UICollectionView+EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52669C24950997009B5A39 /* UICollectionView+EmptyView.swift */; };
 		7B5266DA24950997009B5A39 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52669D24950997009B5A39 /* UIImageView+Extension.swift */; };
@@ -70,6 +72,16 @@
 		7B52671C249509EA009B5A39 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B526715249509EA009B5A39 /* HomeViewController.swift */; };
 		7B52671D249509EA009B5A39 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B526716249509EA009B5A39 /* HomeInteractor.swift */; };
 		7B52671E249509EA009B5A39 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B526717249509EA009B5A39 /* HomeEntity.swift */; };
+		7B6F9F762495DB9A00495D8B /* AnyDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F9F702495DB9A00495D8B /* AnyDecodable.swift */; };
+		7B6F9F772495DB9A00495D8B /* NetErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F9F712495DB9A00495D8B /* NetErrorHandler.swift */; };
+		7B6F9F782495DB9A00495D8B /* NetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F9F722495DB9A00495D8B /* NetworkCall.swift */; };
+		7B6F9F792495DB9A00495D8B /* CacabaApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F9F732495DB9A00495D8B /* CacabaApiService.swift */; };
+		7B6F9F7A2495DB9A00495D8B /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F9F742495DB9A00495D8B /* AnyCodable.swift */; };
+		7B6F9F7B2495DB9A00495D8B /* AnyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F9F752495DB9A00495D8B /* AnyEncodable.swift */; };
+		7B6F9F802495E35F00495D8B /* GetBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F9F7F2495E35F00495D8B /* GetBook.swift */; };
+		7B6F9F822495E4E400495D8B /* NewBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F9F812495E4E400495D8B /* NewBook.swift */; };
+		7B6F9F842495E4F100495D8B /* DetailBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F9F832495E4F100495D8B /* DetailBook.swift */; };
+		7B6F9F862495E51400495D8B /* DetailAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F9F852495E51400495D8B /* DetailAuthor.swift */; };
 		7BB7D44F249507FB00E120F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB7D44E249507FB00E120F8 /* AppDelegate.swift */; };
 		7BB7D451249507FB00E120F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB7D450249507FB00E120F8 /* SceneDelegate.swift */; };
 		7BB7D458249507FD00E120F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB7D457249507FD00E120F8 /* Assets.xcassets */; };
@@ -103,6 +115,8 @@
 		33BCDF26F686E3AD0F63AA08 /* Pods_FinalMamiCampTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalMamiCampTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA5271AD5222F7B8D243C96 /* Pods-FinalMamiCampTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalMamiCampTests.debug.xcconfig"; path = "Target Support Files/Pods-FinalMamiCampTests/Pods-FinalMamiCampTests.debug.xcconfig"; sourceTree = "<group>"; };
 		71F87B01296F3D4F7A940D8F /* Pods-FinalMamiCamp-FinalMamiCampUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalMamiCamp-FinalMamiCampUITests.debug.xcconfig"; path = "Target Support Files/Pods-FinalMamiCamp-FinalMamiCampUITests/Pods-FinalMamiCamp-FinalMamiCampUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B43F5632495CEBD0049ABDE /* HomeViewController+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+UICollectionView.swift"; sourceTree = "<group>"; };
+		7B4E30E42495E97F002F72AA /* GetGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGenre.swift; sourceTree = "<group>"; };
 		7B5266982495094B009B5A39 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		7B52669C24950997009B5A39 /* UICollectionView+EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+EmptyView.swift"; sourceTree = "<group>"; };
 		7B52669D24950997009B5A39 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -165,6 +179,16 @@
 		7B526715249509EA009B5A39 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7B526716249509EA009B5A39 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		7B526717249509EA009B5A39 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		7B6F9F702495DB9A00495D8B /* AnyDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyDecodable.swift; sourceTree = "<group>"; };
+		7B6F9F712495DB9A00495D8B /* NetErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetErrorHandler.swift; sourceTree = "<group>"; };
+		7B6F9F722495DB9A00495D8B /* NetworkCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCall.swift; sourceTree = "<group>"; };
+		7B6F9F732495DB9A00495D8B /* CacabaApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacabaApiService.swift; sourceTree = "<group>"; };
+		7B6F9F742495DB9A00495D8B /* AnyCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyCodable.swift; sourceTree = "<group>"; };
+		7B6F9F752495DB9A00495D8B /* AnyEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyEncodable.swift; sourceTree = "<group>"; };
+		7B6F9F7F2495E35F00495D8B /* GetBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBook.swift; sourceTree = "<group>"; };
+		7B6F9F812495E4E400495D8B /* NewBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBook.swift; sourceTree = "<group>"; };
+		7B6F9F832495E4F100495D8B /* DetailBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBook.swift; sourceTree = "<group>"; };
+		7B6F9F852495E51400495D8B /* DetailAuthor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAuthor.swift; sourceTree = "<group>"; };
 		7BB7D44B249507FB00E120F8 /* FinalMamiCamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalMamiCamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB7D44E249507FB00E120F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BB7D450249507FB00E120F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -417,8 +441,35 @@
 			children = (
 				7B526715249509EA009B5A39 /* HomeViewController.swift */,
 				7B526712249509EA009B5A39 /* HomeViewPresenterToView.swift */,
+				7B43F5632495CEBD0049ABDE /* HomeViewController+UICollectionView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7B6F9F6F2495DB9A00495D8B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7B6F9F7C2495E29E00495D8B /* Model */,
+				7B6F9F702495DB9A00495D8B /* AnyDecodable.swift */,
+				7B6F9F712495DB9A00495D8B /* NetErrorHandler.swift */,
+				7B6F9F722495DB9A00495D8B /* NetworkCall.swift */,
+				7B6F9F732495DB9A00495D8B /* CacabaApiService.swift */,
+				7B6F9F742495DB9A00495D8B /* AnyCodable.swift */,
+				7B6F9F752495DB9A00495D8B /* AnyEncodable.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7B6F9F7C2495E29E00495D8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B6F9F7F2495E35F00495D8B /* GetBook.swift */,
+				7B6F9F812495E4E400495D8B /* NewBook.swift */,
+				7B6F9F832495E4F100495D8B /* DetailBook.swift */,
+				7B6F9F852495E51400495D8B /* DetailAuthor.swift */,
+				7B4E30E42495E97F002F72AA /* GetGenre.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7BB7D442249507FB00E120F8 = {
@@ -448,6 +499,7 @@
 			isa = PBXGroup;
 			children = (
 				7B52669A24950997009B5A39 /* Common */,
+				7B6F9F6F2495DB9A00495D8B /* Network */,
 				7B52670F249509CD009B5A39 /* Feature */,
 				7BB7D44E249507FB00E120F8 /* AppDelegate.swift */,
 				7BB7D450249507FB00E120F8 /* SceneDelegate.swift */,
@@ -737,7 +789,10 @@
 				7B5266E424950997009B5A39 /* DZAAlert.swift in Sources */,
 				7B5266E724950997009B5A39 /* Pholidota.swift in Sources */,
 				7B5266E024950997009B5A39 /* UIViewController+Extension.swift in Sources */,
+				7B6F9F772495DB9A00495D8B /* NetErrorHandler.swift in Sources */,
+				7B6F9F792495DB9A00495D8B /* CacabaApiService.swift in Sources */,
 				7B52671B249509EA009B5A39 /* HomePresenter.swift in Sources */,
+				7B4E30E52495E97F002F72AA /* GetGenre.swift in Sources */,
 				7B526718249509EA009B5A39 /* HomePresenterProtocol.swift in Sources */,
 				7B52671C249509EA009B5A39 /* HomeViewController.swift in Sources */,
 				7B5266DA24950997009B5A39 /* UIImageView+Extension.swift in Sources */,
@@ -746,10 +801,12 @@
 				7B5266F424950997009B5A39 /* BottomSheetContainerView.swift in Sources */,
 				7B5266E224950997009B5A39 /* DZACollectionViewFlowLayout.swift in Sources */,
 				7B52670424950997009B5A39 /* Global.swift in Sources */,
+				7B6F9F862495E51400495D8B /* DetailAuthor.swift in Sources */,
 				7B5266F124950997009B5A39 /* DZAKeychain.swift in Sources */,
 				7B5266DD24950997009B5A39 /* UIColor+Custom.swift in Sources */,
 				7B5266FB24950997009B5A39 /* DZALabelHint.swift in Sources */,
 				7B5266ED24950997009B5A39 /* HalfModalTransitionAnimator.swift in Sources */,
+				7B43F5642495CEBD0049ABDE /* HomeViewController+UICollectionView.swift in Sources */,
 				7B5266EC24950997009B5A39 /* HalfModalInteractiveTransition.swift in Sources */,
 				7B5266FA24950997009B5A39 /* RoseTextField.swift in Sources */,
 				7B52671D249509EA009B5A39 /* HomeInteractor.swift in Sources */,
@@ -766,13 +823,17 @@
 				7B5266F024950997009B5A39 /* TegKeychainConstants.swift in Sources */,
 				7B52670C24950997009B5A39 /* DZAFormatter.swift in Sources */,
 				7B52670824950997009B5A39 /* UILabel+Extension.swift in Sources */,
+				7B6F9F842495E4F100495D8B /* DetailBook.swift in Sources */,
 				7B52670E24950997009B5A39 /* Debouncer.swift in Sources */,
 				7B52670924950997009B5A39 /* TextFieldFilter.swift in Sources */,
+				7B6F9F802495E35F00495D8B /* GetBook.swift in Sources */,
 				7B5266F224950997009B5A39 /* KeychainSwiftAccessOptions.swift in Sources */,
 				7B5266FE24950997009B5A39 /* DZASpinner.swift in Sources */,
+				7B6F9F7B2495DB9A00495D8B /* AnyEncodable.swift in Sources */,
 				7B5266F724950997009B5A39 /* IconLabel.swift in Sources */,
 				7B5266992495094B009B5A39 /* R.generated.swift in Sources */,
 				7B526719249509EA009B5A39 /* HomeViewPresenterToView.swift in Sources */,
+				7B6F9F822495E4E400495D8B /* NewBook.swift in Sources */,
 				7B52670724950997009B5A39 /* DZAThirdPartyApp.swift in Sources */,
 				7B5266E824950997009B5A39 /* Snacky.swift in Sources */,
 				7B52670224950997009B5A39 /* DZAEmptyView.swift in Sources */,
@@ -787,12 +848,15 @@
 				7B52670124950997009B5A39 /* DZARefreshControl.swift in Sources */,
 				7B52670A24950997009B5A39 /* Encodable+Extension.swift in Sources */,
 				7B5266E124950997009B5A39 /* Dimension.swift in Sources */,
+				7B6F9F762495DB9A00495D8B /* AnyDecodable.swift in Sources */,
+				7B6F9F7A2495DB9A00495D8B /* AnyCodable.swift in Sources */,
 				7B5266DE24950997009B5A39 /* UIView+Extension.swift in Sources */,
 				7B5266F624950997009B5A39 /* ImageLoader.swift in Sources */,
 				7B5266DF24950997009B5A39 /* UIImage+Extension.swift in Sources */,
 				7B5266E624950997009B5A39 /* UINavigationController.swift in Sources */,
 				7B52670624950997009B5A39 /* CountDownTimer.swift in Sources */,
 				7B5266FD24950997009B5A39 /* OtpTextField.swift in Sources */,
+				7B6F9F782495DB9A00495D8B /* NetworkCall.swift in Sources */,
 				7B5266DC24950997009B5A39 /* UITub.swift in Sources */,
 				7B5266F824950997009B5A39 /* DZATextField.swift in Sources */,
 				7B5266EB24950997009B5A39 /* ContainerModalViewController.swift in Sources */,

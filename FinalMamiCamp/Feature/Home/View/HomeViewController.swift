@@ -13,10 +13,14 @@ class HomeViewController: UICollectionViewController {
     var presenter: HomeViewToPresenterProtocol?
     var param: HomeParam?
     
+    let homeItemCellIdentifier = "homeItemCellIdentifier"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         collectionView.backgroundColor = .white
+        
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: homeItemCellIdentifier)
     }
     
 }
