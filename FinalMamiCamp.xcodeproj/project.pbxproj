@@ -18,6 +18,7 @@
 		7B4E310424961E86002F72AA /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E30FD24961E86002F72AA /* BookViewController.swift */; };
 		7B4E310524961E86002F72AA /* BookInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E30FE24961E86002F72AA /* BookInteractor.swift */; };
 		7B4E310624961E86002F72AA /* BookEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E30FF24961E86002F72AA /* BookEntity.swift */; };
+		7B4E310D24961F6B002F72AA /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E310C24961F6B002F72AA /* BookCell.swift */; };
 		7B5266992495094B009B5A39 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5266982495094B009B5A39 /* R.generated.swift */; };
 		7B5266D924950997009B5A39 /* UICollectionView+EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52669C24950997009B5A39 /* UICollectionView+EmptyView.swift */; };
 		7B5266DA24950997009B5A39 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52669D24950997009B5A39 /* UIImageView+Extension.swift */; };
@@ -90,6 +91,7 @@
 		7B6F9F822495E4E400495D8B /* NewBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F9F812495E4E400495D8B /* NewBook.swift */; };
 		7B6F9F842495E4F100495D8B /* DetailBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F9F832495E4F100495D8B /* DetailBook.swift */; };
 		7B6F9F862495E51400495D8B /* DetailAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F9F852495E51400495D8B /* DetailAuthor.swift */; };
+		7B70F73E2496201000FDA3FF /* BookViewController+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B70F73D2496201000FDA3FF /* BookViewController+UICollectionView.swift */; };
 		7BB7D44F249507FB00E120F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB7D44E249507FB00E120F8 /* AppDelegate.swift */; };
 		7BB7D451249507FB00E120F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB7D450249507FB00E120F8 /* SceneDelegate.swift */; };
 		7BB7D458249507FD00E120F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB7D457249507FD00E120F8 /* Assets.xcassets */; };
@@ -133,6 +135,7 @@
 		7B4E30FD24961E86002F72AA /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		7B4E30FE24961E86002F72AA /* BookInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInteractor.swift; sourceTree = "<group>"; };
 		7B4E30FF24961E86002F72AA /* BookEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookEntity.swift; sourceTree = "<group>"; };
+		7B4E310C24961F6B002F72AA /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		7B5266982495094B009B5A39 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		7B52669C24950997009B5A39 /* UICollectionView+EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+EmptyView.swift"; sourceTree = "<group>"; };
 		7B52669D24950997009B5A39 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -205,6 +208,7 @@
 		7B6F9F812495E4E400495D8B /* NewBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBook.swift; sourceTree = "<group>"; };
 		7B6F9F832495E4F100495D8B /* DetailBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBook.swift; sourceTree = "<group>"; };
 		7B6F9F852495E51400495D8B /* DetailAuthor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAuthor.swift; sourceTree = "<group>"; };
+		7B70F73D2496201000FDA3FF /* BookViewController+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookViewController+UICollectionView.swift"; sourceTree = "<group>"; };
 		7BB7D44B249507FB00E120F8 /* FinalMamiCamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalMamiCamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB7D44E249507FB00E120F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BB7D450249507FB00E120F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -324,6 +328,8 @@
 			children = (
 				7B4E30FD24961E86002F72AA /* BookViewController.swift */,
 				7B4E30FA24961E86002F72AA /* BookViewPresenterToView.swift */,
+				7B4E310C24961F6B002F72AA /* BookCell.swift */,
+				7B70F73D2496201000FDA3FF /* BookViewController+UICollectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -910,6 +916,7 @@
 				7B5266992495094B009B5A39 /* R.generated.swift in Sources */,
 				7B526719249509EA009B5A39 /* GenreViewPresenterToView.swift in Sources */,
 				7B6F9F822495E4E400495D8B /* NewBook.swift in Sources */,
+				7B70F73E2496201000FDA3FF /* BookViewController+UICollectionView.swift in Sources */,
 				7B52670724950997009B5A39 /* DZAThirdPartyApp.swift in Sources */,
 				7B5266E824950997009B5A39 /* Snacky.swift in Sources */,
 				7B52670224950997009B5A39 /* DZAEmptyView.swift in Sources */,
@@ -917,6 +924,7 @@
 				7B5266EA24950997009B5A39 /* HalfModalPresentationController.swift in Sources */,
 				7B5266F524950997009B5A39 /* DZAButton.swift in Sources */,
 				7B5266EF24950997009B5A39 /* KeychainSwift.swift in Sources */,
+				7B4E310D24961F6B002F72AA /* BookCell.swift in Sources */,
 				7B5266FC24950997009B5A39 /* DZATextView.swift in Sources */,
 				7B5266EE24950997009B5A39 /* HalfModalTransitioningDelegate.swift in Sources */,
 				7B52670B24950997009B5A39 /* Double+Extension.swift in Sources */,

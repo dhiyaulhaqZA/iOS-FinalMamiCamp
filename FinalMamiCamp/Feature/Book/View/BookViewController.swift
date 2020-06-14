@@ -13,10 +13,14 @@ class BookViewController: UICollectionViewController {
     var presenter: BookViewToPresenterProtocol?
     var param: BookParam?
     
+    let bookCellIdentifier = "bookCellIdentifier"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+        view.backgroundColor = .white
+        collectionView.backgroundColor = .white
+        collectionView.contentInset = UIEdgeInsets(top: 16, left: 8, bottom: 16, right: 8)
+        collectionView.register(BookCell.self, forCellWithReuseIdentifier: bookCellIdentifier)
     }
     
 }
