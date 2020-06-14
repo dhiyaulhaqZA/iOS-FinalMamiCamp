@@ -1,6 +1,6 @@
 //
 //  Encodable+Extension.swift
-//  Consumer
+//  FinalMamiCamp
 //
 //  Created by Dhiya Ulhaq Zulha Alamsyah on 24/10/19.
 //  Copyright © 2019 dhiyaulhaqza. All rights reserved.

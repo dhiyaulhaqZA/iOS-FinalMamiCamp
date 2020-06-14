@@ -1,16 +1,16 @@
 //
 //  UINavigationController.swift
-//  Consumer
+//  FinalMamiCamp
 //
 //  Created by Dhiya Ulhaq Zulha Alamsyah on 14/11/19.
-//  Copyright © 2019 Hepicar. All rights reserved.
+//  Copyright © 2019 dhiyaulhaqza. All rights reserved.
 //
 
 import UIKit
 
 extension UINavigationController {
     
-    func setHepicarStyle() {
+    func setdhiyaulhaqzaStyle() {
         UINavigationBar.appearance().tintColor = .black
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear], for: .normal)

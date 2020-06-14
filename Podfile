@@ -7,6 +7,7 @@ target 'FinalMamiCamp' do
 
   # Pods for FinalMamiCamp
   pod 'R.swift'
+  pod 'Moya'
   
   target 'FinalMamiCampTests' do
     inherit! :search_paths
