@@ -1,6 +1,6 @@
 //
 //  DZALabelHint.swift
-//  Consumer
+//  FinalMamiCamp
 //
 //  Created by Dhiya Ulhaq Zulha Alamsyah on 08/01/20.
 //  Copyright © 2020 dhiyaulhaqza. All rights reserved.

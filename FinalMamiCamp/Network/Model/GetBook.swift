@@ -13,7 +13,7 @@ struct GetBookBody: Codable {
 }
 
 // MARK: - Result
-struct BooksResponse: Codable {
+struct BookResponse: Codable {
     let id: Int?
     let title, coverURL: String?
     let writerID: Int?

@@ -1,6 +1,6 @@
 //
 //  Pholidota.swift
-//  Consumer
+//  FinalMamiCamp
 //
 //  Created by Dhiya Ulhaq Zulha Alamsyah on 25/10/19.
 //  Copyright © 2019 dhiyaulhaqza. All rights reserved.

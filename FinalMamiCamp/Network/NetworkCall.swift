@@ -1,9 +1,9 @@
 //
 //  NetworkCall.swift
-//  Consumer
+//  FinalMamiCamp
 //
 //  Created by Dhiya Ulhaq Zulha Alamsyah on 23/10/19.
-//  Copyright © 2019 Hepicar. All rights reserved.
+//  Copyright © 2019 dhiyaulhaqza. All rights reserved.
 //
 
 import Moya
@@ -42,7 +42,6 @@ enum ResponseOtherListener {
 /// An helper class for network requests
 class NetworkCall<T: Codable> {
     
-    /// Moya provider for hepicar API
     private let provider = MoyaProvider<CacabaApiService>(plugins: [NetworkLoggerPlugin(verbose: true)])
     
     func request(_ cacabaService: CacabaApiService, callback: @escaping (ResponseListener<T>) -> Void) {

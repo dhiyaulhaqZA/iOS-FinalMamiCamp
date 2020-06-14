@@ -9,5 +9,19 @@
 import UIKit
 
 extension BookViewController: BookPresenterToViewProtocol {
+    func onGetNewBooksSuccess(body: ServerResponse<[BookResponse]>, responseCode: Int) {
+        bookList = []
+        bookList = body.result ?? []
+        collectionView.reloadData()
+    }
+    
+    func onGetNewBooksFailure(errMsg: String, responseCode: Int, errorCode: Int) {
+        
+    }
+    
+    func onGetNewBooksLoading(isLoading: Bool) {
+        
+    }
+    
 
 }

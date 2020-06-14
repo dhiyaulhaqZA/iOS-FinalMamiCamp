@@ -15,13 +15,11 @@ extension GenreViewController: UICollectionViewDelegateFlowLayout {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return genreList.count
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: homeItemCellIdentifier, for: indexPath) as! GenreCell
-        if !genreList.isEmpty {
-            cell.setupData(title: genreList[indexPath.row].title ?? "")
-        }
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: genreItemCellIdentifier, for: indexPath) as! GenreCell
+        cell.setupData(title: genreList[indexPath.row].title ?? "")
         return cell
     }
     

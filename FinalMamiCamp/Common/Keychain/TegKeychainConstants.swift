@@ -1,6 +1,6 @@
 //
 //  TegKeychainConstants.swift
-//  Consumer
+//  FinalMamiCamp
 //
 //  Created by Dhiya Ulhaq Zulha Alamsyah on 31/10/19.
 //  Copyright © 2019 dhiyaulhaqza. All rights reserved.

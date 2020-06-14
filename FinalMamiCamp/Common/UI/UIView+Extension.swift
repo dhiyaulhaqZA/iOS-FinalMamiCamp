@@ -1,6 +1,6 @@
 //
 //  UIView+Extension.swift
-//  Consumer
+//  FinalMamiCamp
 //
 //  Created by Dhiya Ulhaq Zulha Alamsyah on 23/09/19.
 //  Copyright © 2019 dhiyaulhaqza. All rights reserved.

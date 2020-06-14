@@ -14,14 +14,14 @@ class GenreViewController: UICollectionViewController {
     var param: GenreParam?
     var genreList: [GenreResult] = []
     
-    let homeItemCellIdentifier = "homeItemCellIdentifier"
+    let genreItemCellIdentifier = "genreItemCellIdentifier"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         collectionView.backgroundColor = .white
         collectionView.contentInset = UIEdgeInsets(top: 16, left: 8, bottom: 16, right: 8)
-        collectionView.register(GenreCell.self, forCellWithReuseIdentifier: homeItemCellIdentifier)
+        collectionView.register(GenreCell.self, forCellWithReuseIdentifier: genreItemCellIdentifier)
         
         presenter?.getGenres()
     }

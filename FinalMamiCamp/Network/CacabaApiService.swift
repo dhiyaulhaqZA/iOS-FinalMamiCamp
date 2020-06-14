@@ -1,9 +1,9 @@
 //
 //  CacabaApiService.swift
-//  Consumer
+//  FinalMamiCamp
 //
 //  Created by Dhiya Ulhaq Zulha Alamsyah on 21/10/19.
-//  Copyright © 2019 Hepicar. All rights reserved.
+//  Copyright © 2019 dhiyaulhaqza. All rights reserved.
 //
 
 import Moya

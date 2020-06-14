@@ -19,13 +19,20 @@ class BookCell: UICollectionViewCell {
     }()
     
     let titleLabel: UILabel = {
-        return buildUI.label(id: "bookCell_title", style: .headline, color: .black, align: .left, text: "Book Title", numberOfLines: 1)
+        return buildUI.label(id: "bookCell_title", style: .headline, color: .black, align: .left, text: "", numberOfLines: 1)
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupComponent()
         setupConstraint()
+    }
+    
+    func setupData(data: BookResponse) {
+        if let coverURL = data.coverURL {
+            coverImage.loadImageUsingUrlString(DZAConstant.getImageUrl(path: coverURL), completion: { (_) in})
+        }
+        titleLabel.text = data.title ?? ""
     }
 
     private func setupComponent() {

@@ -1,6 +1,6 @@
 //
 //  String+Extension.swift
-//  Consumer
+//  FinalMamiCamp
 //
 //  Created by Dhiya Ulhaq Zulha Alamsyah on 12/12/19.
 //  Copyright © 2019 dhiyaulhaqza. All rights reserved.
