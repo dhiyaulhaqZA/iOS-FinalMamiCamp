@@ -11,6 +11,13 @@
 		7B43F5642495CEBD0049ABDE /* GenreViewController+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B43F5632495CEBD0049ABDE /* GenreViewController+UICollectionView.swift */; };
 		7B4E30E52495E97F002F72AA /* GetGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E30E42495E97F002F72AA /* GetGenre.swift */; };
 		7B4E30E724960EF6002F72AA /* GenreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E30E624960EF6002F72AA /* GenreCell.swift */; };
+		7B4E310024961E86002F72AA /* BookPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E30F924961E86002F72AA /* BookPresenterProtocol.swift */; };
+		7B4E310124961E86002F72AA /* BookViewPresenterToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E30FA24961E86002F72AA /* BookViewPresenterToView.swift */; };
+		7B4E310224961E86002F72AA /* BookRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E30FB24961E86002F72AA /* BookRouter.swift */; };
+		7B4E310324961E86002F72AA /* BookPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E30FC24961E86002F72AA /* BookPresenter.swift */; };
+		7B4E310424961E86002F72AA /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E30FD24961E86002F72AA /* BookViewController.swift */; };
+		7B4E310524961E86002F72AA /* BookInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E30FE24961E86002F72AA /* BookInteractor.swift */; };
+		7B4E310624961E86002F72AA /* BookEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E30FF24961E86002F72AA /* BookEntity.swift */; };
 		7B5266992495094B009B5A39 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5266982495094B009B5A39 /* R.generated.swift */; };
 		7B5266D924950997009B5A39 /* UICollectionView+EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52669C24950997009B5A39 /* UICollectionView+EmptyView.swift */; };
 		7B5266DA24950997009B5A39 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52669D24950997009B5A39 /* UIImageView+Extension.swift */; };
@@ -119,6 +126,13 @@
 		7B43F5632495CEBD0049ABDE /* GenreViewController+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GenreViewController+UICollectionView.swift"; sourceTree = "<group>"; };
 		7B4E30E42495E97F002F72AA /* GetGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGenre.swift; sourceTree = "<group>"; };
 		7B4E30E624960EF6002F72AA /* GenreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCell.swift; sourceTree = "<group>"; };
+		7B4E30F924961E86002F72AA /* BookPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPresenterProtocol.swift; sourceTree = "<group>"; };
+		7B4E30FA24961E86002F72AA /* BookViewPresenterToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewPresenterToView.swift; sourceTree = "<group>"; };
+		7B4E30FB24961E86002F72AA /* BookRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRouter.swift; sourceTree = "<group>"; };
+		7B4E30FC24961E86002F72AA /* BookPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPresenter.swift; sourceTree = "<group>"; };
+		7B4E30FD24961E86002F72AA /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		7B4E30FE24961E86002F72AA /* BookInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInteractor.swift; sourceTree = "<group>"; };
+		7B4E30FF24961E86002F72AA /* BookEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookEntity.swift; sourceTree = "<group>"; };
 		7B5266982495094B009B5A39 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		7B52669C24950997009B5A39 /* UICollectionView+EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+EmptyView.swift"; sourceTree = "<group>"; };
 		7B52669D24950997009B5A39 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -260,6 +274,60 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7B4E30F824961E71002F72AA /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				7B4E310B24961EAF002F72AA /* View */,
+				7B4E310A24961E9B002F72AA /* Interactor */,
+				7B4E310924961E96002F72AA /* Presenter */,
+				7B4E310824961E91002F72AA /* Entity */,
+				7B4E310724961E8B002F72AA /* Router */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		7B4E310724961E8B002F72AA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7B4E30FB24961E86002F72AA /* BookRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		7B4E310824961E91002F72AA /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				7B4E30FF24961E86002F72AA /* BookEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		7B4E310924961E96002F72AA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7B4E30FC24961E86002F72AA /* BookPresenter.swift */,
+				7B4E30F924961E86002F72AA /* BookPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7B4E310A24961E9B002F72AA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7B4E30FE24961E86002F72AA /* BookInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7B4E310B24961EAF002F72AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B4E30FD24961E86002F72AA /* BookViewController.swift */,
+				7B4E30FA24961E86002F72AA /* BookViewPresenterToView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		7B52669A24950997009B5A39 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +456,7 @@
 		7B52670F249509CD009B5A39 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				7B4E30F824961E71002F72AA /* Book */,
 				7B526710249509D9009B5A39 /* Genre */,
 			);
 			path = Feature;
@@ -502,8 +571,8 @@
 			isa = PBXGroup;
 			children = (
 				7B52669A24950997009B5A39 /* Common */,
-				7B6F9F6F2495DB9A00495D8B /* Network */,
 				7B52670F249509CD009B5A39 /* Feature */,
+				7B6F9F6F2495DB9A00495D8B /* Network */,
 				7BB7D44E249507FB00E120F8 /* AppDelegate.swift */,
 				7BB7D450249507FB00E120F8 /* SceneDelegate.swift */,
 				7BB7D457249507FD00E120F8 /* Assets.xcassets */,
@@ -817,10 +886,12 @@
 				7B52670524950997009B5A39 /* AuthLogout.swift in Sources */,
 				7B5266E324950997009B5A39 /* UICollectionView+Extension.swift in Sources */,
 				7B52671E249509EA009B5A39 /* GenreEntity.swift in Sources */,
+				7B4E310324961E86002F72AA /* BookPresenter.swift in Sources */,
 				7B5266F324950997009B5A39 /* BottomSheetBackgroundView.swift in Sources */,
 				7BB7D451249507FB00E120F8 /* SceneDelegate.swift in Sources */,
 				7B4E30E724960EF6002F72AA /* GenreCell.swift in Sources */,
 				7B5266D924950997009B5A39 /* UICollectionView+EmptyView.swift in Sources */,
+				7B4E310424961E86002F72AA /* BookViewController.swift in Sources */,
 				7B52671A249509EA009B5A39 /* GenreRouter.swift in Sources */,
 				7B52670D24950997009B5A39 /* String+Extension.swift in Sources */,
 				7B52670024950997009B5A39 /* DZACountDownTimer.swift in Sources */,
@@ -828,6 +899,7 @@
 				7B52670C24950997009B5A39 /* DZAFormatter.swift in Sources */,
 				7B52670824950997009B5A39 /* UILabel+Extension.swift in Sources */,
 				7B6F9F842495E4F100495D8B /* DetailBook.swift in Sources */,
+				7B4E310224961E86002F72AA /* BookRouter.swift in Sources */,
 				7B52670E24950997009B5A39 /* Debouncer.swift in Sources */,
 				7B52670924950997009B5A39 /* TextFieldFilter.swift in Sources */,
 				7B6F9F802495E35F00495D8B /* GetBook.swift in Sources */,
@@ -841,6 +913,7 @@
 				7B52670724950997009B5A39 /* DZAThirdPartyApp.swift in Sources */,
 				7B5266E824950997009B5A39 /* Snacky.swift in Sources */,
 				7B52670224950997009B5A39 /* DZAEmptyView.swift in Sources */,
+				7B4E310624961E86002F72AA /* BookEntity.swift in Sources */,
 				7B5266EA24950997009B5A39 /* HalfModalPresentationController.swift in Sources */,
 				7B5266F524950997009B5A39 /* DZAButton.swift in Sources */,
 				7B5266EF24950997009B5A39 /* KeychainSwift.swift in Sources */,
@@ -852,6 +925,7 @@
 				7B52670124950997009B5A39 /* DZARefreshControl.swift in Sources */,
 				7B52670A24950997009B5A39 /* Encodable+Extension.swift in Sources */,
 				7B5266E124950997009B5A39 /* Dimension.swift in Sources */,
+				7B4E310024961E86002F72AA /* BookPresenterProtocol.swift in Sources */,
 				7B6F9F762495DB9A00495D8B /* AnyDecodable.swift in Sources */,
 				7B6F9F7A2495DB9A00495D8B /* AnyCodable.swift in Sources */,
 				7B5266DE24950997009B5A39 /* UIView+Extension.swift in Sources */,
@@ -862,6 +936,8 @@
 				7B5266FD24950997009B5A39 /* OtpTextField.swift in Sources */,
 				7B6F9F782495DB9A00495D8B /* NetworkCall.swift in Sources */,
 				7B5266DC24950997009B5A39 /* UITub.swift in Sources */,
+				7B4E310124961E86002F72AA /* BookViewPresenterToView.swift in Sources */,
+				7B4E310524961E86002F72AA /* BookInteractor.swift in Sources */,
 				7B5266F824950997009B5A39 /* DZATextField.swift in Sources */,
 				7B5266EB24950997009B5A39 /* ContainerModalViewController.swift in Sources */,
 				7B5266F924950997009B5A39 /* RatingView.swift in Sources */,
